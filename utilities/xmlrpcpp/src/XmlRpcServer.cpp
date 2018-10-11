@@ -235,7 +235,7 @@ int XmlRpcServer::countFreeFDs() {
 
     // Poll the available file descriptors.
     // The POSIX specification guarantees that rlim_cur will always be less or
-    // equal to the process's initial rlim_max, so we don't need an additonal
+    // equal to the process's initial rlim_max, so we don't need an additional
     // bounds check here.
     if(poll(&pollfds[0], limit.rlim_cur, 1) >= 0) {
       for(rlim_t i=0; i<limit.rlim_cur; i++) {

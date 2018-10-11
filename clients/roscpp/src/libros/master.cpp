@@ -66,7 +66,7 @@ void init(const M_string& remappings)
     if (!master_uri_env)
     {
       ROS_FATAL( "ROS_MASTER_URI is not defined in the environment. Either " \
-                 "type the following or (preferrably) add this to your " \
+                 "type the following or (preferably) add this to your " \
                  "~/.bashrc file in order set up your " \
                  "local machine as a ROS master:\n\n" \
                  "export ROS_MASTER_URI=http://localhost:11311\n\n" \
